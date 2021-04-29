@@ -26,10 +26,12 @@ body {
     background-size: cover;
 }
 #upper {
-    height: 300px;
+    width: auto;
+    height: 350px;
     text-align: left;
-    background-color: aqua;
+    background-color: transparent;
     padding: 60px;
+    
     background-attachment: fixed;
     background-image: url(darth.jpg);
     background-repeat: no-repeat;
@@ -60,15 +62,15 @@ body {
 
 #discover {
 
-    margin: 20px;
-
+    
+    width: 100%;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: grid;
-    grid-gap: 80px;
-
-    grid-template-columns: repeat(3,500px);
+    grid-gap: 20px;
+    background-color: transparent;
+    grid-template-columns: repeat(auto-fit,400px);
 }
 
 #class {
@@ -76,32 +78,35 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 10px;
-    padding: 10px;
+    height: 10px;
+    
     border: 0px solid;
     border-radius: 5px;
-    margin: 0px;
+    
 }
 
 #class:hover {
-    filter: blur(2px);
+    filter: opacity(0px);
     margin-left: auto;
     margin-right: auto;
     width: 10px;
-    padding: 10px;
+    
     border: 0px solid;
     border-radius: 5px;
-    margin: 0px;
+    
 }
 
 img {
     margin: 10px;
+    width: 300px;
+    
     border: 0px solid;
     border-radius: 10px;
     transition: all 0.3s ease-out;
 }
 
 img:hover {
-    filter: blur(2px);
+    filter: opacity(80%);
     border: 0px solid;
     border-radius: 10px;
 }
