@@ -7,10 +7,16 @@ body {
     margin: 0;
     /* background-color: black; */
     padding: 0;
+    font-size: 15px;
     background-repeat: repeat;
     background-size: cover;
+    scroll-behavior: smooth;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
 .img{
     text-align: center;
     align-items: center;
@@ -27,7 +33,7 @@ body {
 }
 #upper {
     width: auto;
-    height: 350px;
+    height: auto;
     text-align: left;
     background-color: transparent;
     padding: 60px;
@@ -68,7 +74,7 @@ body {
     align-items: center;
     justify-content: center;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     background-color: transparent;
     grid-template-columns: repeat(auto-fit,400px);
 }
@@ -79,7 +85,7 @@ body {
     margin-right: auto;
     width: 10px;
     height: 10px;
-    
+    transition: all 0.3s ease-in;
     border: 0px solid;
     border-radius: 5px;
     
@@ -89,7 +95,7 @@ body {
     filter: opacity(0px);
     margin-left: auto;
     margin-right: auto;
-    width: 10px;
+    width: 15px;
     
     border: 0px solid;
     border-radius: 5px;
@@ -102,13 +108,17 @@ img {
     
     border: 0px solid;
     border-radius: 10px;
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-in-out;
 }
 
 img:hover {
+    
     filter: opacity(80%);
     border: 0px solid;
+    border-color: black;
     border-radius: 10px;
+    
+
 }
 
 #logo{
